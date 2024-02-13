@@ -10,13 +10,13 @@ print(w.get_balance(refresh=True))
 
 # Encode token metadata into bytes without including the OP_RETURN opcode
 token_metadata = [
-    bytes.fromhex('425356464f524b00'),                 # SLP\x00
+    bytes.fromhex('425356464f524b00'),                 # BSVFORK PROTOCOLID do not change it 
     bytes.fromhex('01'),                 # length of token_type (1 byte)
-    bytes.fromhex('53454e44'),                 # length of token_type (1 byte)
+    bytes.fromhex('53454e44'),                 # SEND HEX do not change it
 
-    bytes.fromhex('paste_genesis_hash_here'),                 # length of token_type (1 byte)
+    bytes.fromhex('paste_genesis_hash_here'),                 # paste your genesis hash here
 
-    bytes.fromhex('4f'),                 # length of token_type (1 byte)
+    bytes.fromhex('4f'),                 # amount to send converted to hex
 
 ]
 
