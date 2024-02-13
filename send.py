@@ -16,7 +16,7 @@ token_metadata = [
 
     bytes.fromhex('paste_genesis_hash_here'),                 # paste your genesis hash here
 
-    bytes.fromhex('4f'),                 # amount to send converted to hex
+    bytes.fromhex('4f'),                 # amount to send converted to hex use convertnumbertohex.py to get number in hex
 
 ]
 
