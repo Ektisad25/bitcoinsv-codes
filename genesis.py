@@ -10,15 +10,15 @@ print(w.get_balance(refresh=True))
 # Encode token metadata into bytes without including the OP_RETURN opcode
 token_metadata = [
     bytes.fromhex('425356464f524b00'),                 # BSVFORK do not changeit
-    bytes.fromhex('01'),                 # length of token_type (1 byte)
-    bytes.fromhex('47454e45534953'),                 # encode hex to bytes
+    bytes.fromhex('01'),                 # fungible token do not change it
+    bytes.fromhex('47454e45534953'),                 # hex used for Genesis do not change it
     bytes.fromhex('5443686174'),                # token symbol
     bytes.fromhex('54726565436861746169'),                 # token name
-    bytes.fromhex('00'),                 # length of token_type (1 byte)
-    bytes.fromhex('00'),                 # length of token_type (1 byte)
-    bytes.fromhex('00'),                 # length of token_type (1 byte)
-    bytes.fromhex('02'),                 # length of token_type (1 byte)
-    bytes.fromhex('00000000000f4240'),                 # encode hex to bytes
+    bytes.fromhex('00'),                 # token image url
+    bytes.fromhex('00'),                 # token document url
+    bytes.fromhex('00'),                 # token website url
+    bytes.fromhex('02'),                 # from script do not change it
+    bytes.fromhex('00000000000f4240'),                 # amount to mint
 
 ]
 
